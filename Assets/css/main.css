@@ -94,7 +94,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color:#005a56;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -139,7 +139,7 @@ input, select, textarea {
 		}
 
 	body {
-		color: #212931;
+		color: white;
 	}
 
 	body, input, select, textarea {
@@ -3229,11 +3229,11 @@ input, select, textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #212931;
-    background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-    background-size: auto, auto, 100% auto;
+    background-color: #005a56;
+    background-image: url("../../images/image.svg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/image.svg");
+    background-size: auto, auto, 20% auto;
     background-position: center, center, top center;
-    background-repeat: repeat, no-repeat, no-repeat;
+	background-repeat: no-repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
     z-index: -1; /* Ensure background stays below content */
 }
@@ -3376,7 +3376,7 @@ body.is-preload #wrapper.fade-in:before {
 				#intro input[type="button"].primary:hover,
 				#intro button.primary:hover,
 				#intro .button.primary:hover {
-					background-color: #18bfef;
+					background-color: #005a56;
 				}
 
 		#intro h1 {
