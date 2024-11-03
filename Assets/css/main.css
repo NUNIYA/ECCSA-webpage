@@ -3097,6 +3097,36 @@ input, select, textarea {
 		border-color: #eeeeee;
 	}
 
+	.home-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); /* Adjust based on screen size */
+		gap: 20px;
+		padding: 15px;
+	  }
+	
+	  .home-box {
+		border: 2px solid #ddd;
+		padding: 20px;
+		border-radius: 10px;
+		text-align: center;
+		position: relative;
+	  }
+	
+	  .home-icon {
+		position: absolute;
+		top: -20px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #fff;
+		padding: 10px;
+		border: 2px solid #ddd;
+		border-radius: 50%;
+	  }
+	
+	  .home-box h3 {
+		margin-top: 30px; /* Space below icon */
+	  }
+
 /* Pagination */
 
 	.pagination {
@@ -3384,14 +3414,14 @@ body.is-preload #wrapper.fade-in:before {
 				}
 
 		#intro h1 {
-			font-size: 5rem;
+			font-size: 3rem;
 			line-height: 1;
 		}
 
 		#intro p {
 			font-size: 1.25rem;
 			font-style: italic;
-			margin-top: -0.25rem;
+			margin-top: 5rem;
 			text-align: center;
 		}
 
@@ -3606,7 +3636,7 @@ body.is-preload #wrapper.fade-in:before {
 /* Nav */
 
 #nav {
-    width: 100%; /* Consistent width */
+    width: 100%;
     color: #ffffff;
     display: flex;
     transition: transform 1s ease, opacity 1s ease, background-color 0.3s ease-in-out;
@@ -3614,9 +3644,9 @@ body.is-preload #wrapper.fade-in:before {
     height: 4rem;
     line-height: 4rem;
     margin: -4rem auto 0 auto;
-    overflow: hidden;
     padding: 0 2rem 0 0;
-    max-width: 72rem;
+    max-width: 80rem;
+/*1280-1360*/
 }
 
 #nav.sticked {
@@ -3624,7 +3654,6 @@ body.is-preload #wrapper.fade-in:before {
     top: 0;
 	right: 0;
     left: 0;
-    width: 100%; /* Consistent width */
     z-index: 1000;
     background-color: rgba(8, 8, 8, 0.9);
     transition: background-color 0.3s ease-in-out;
@@ -3702,12 +3731,14 @@ body.is-preload #wrapper.fade-in:before {
 			list-style: none;
 			margin-bottom: 0;
 			padding-left: 0;
+			flex-wrap: wrap;
 			text-transform: uppercase;
 		}
 
 			#nav ul.links li {
 				display: block;
 				padding-left: 0;
+				 /* Allows items to wrap if needed */
 			}
 
 				#nav ul.links li a {
@@ -3765,7 +3796,7 @@ body.is-preload #wrapper.fade-in:before {
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 80rem;
 		z-index: 2;
 	}
 
@@ -3964,7 +3995,7 @@ body.is-preload #wrapper.fade-in:before {
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 80rem;
 		z-index: 2;
 	}
 
