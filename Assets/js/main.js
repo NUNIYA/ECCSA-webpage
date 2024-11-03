@@ -261,3 +261,19 @@ window.addEventListener('scroll', function () {
 		}
 
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+	const navItems = document.querySelectorAll(".links li");
+
+    navItems.forEach(item => {
+        item.classList.remove("active");
+		const link = item.querySelector("a");
+		if (link.getAttribute("href") === currentPage) {
+            item.classList.add("active"); 
+		}
+    });
+	if (!currentPage || currentPage === "index.html") {
+        navItems[0].classList.add("active"); 
+    }
+});
