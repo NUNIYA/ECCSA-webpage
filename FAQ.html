@@ -9,109 +9,109 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<style>
-.main-title {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    text-align: left;
-}
-
-.subtitle {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 2rem;
-}
-
-.faq-section {
-    margin-bottom: 2rem;
-}
-
-.faq-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding: 1rem 1.5rem;
-    background-color: rgba(0, 142, 135, 0.1);  
-    border-left: 4px solid var(--primary-color);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-}
-
-
-.faq-section h2:hover {
-    background-color: rgba(0, 142, 135, 0.15);
-}
-
-.faq-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.faq-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.faq-question {
-    padding: 1.25rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 142, 135, 0.05);
-    transition: background-color 0.3s ease;
-}
-
-.faq-question:hover {
-    background-color: rgba(0, 142, 135, 0.1);
-}
-
-.faq-question h3 {
-    margin: 0;
-    font-size: 1rem;
-}
-
-.toggle-icon {
-    font-size: 1.25rem;
-    color: var(--primary-color);
-    transition: transform 0.3s ease;
-}
-
-.faq-answer {
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.faq-answer.active {
-    padding: 1.25rem;
-    max-height: 500px;
-}
-
-.faq-answer p {
-    margin-top: 0;
-}
-
-.faq-answer ul {
-    list-style: none;
-    padding-left: 1.2rem;
-}
-
-.faq-answer ul li {
-    margin-bottom: 0.5rem;
-    position: relative;
-}
-
-.faq-answer ul li:before {
-    content: "•";
-    color: var(--secondary-color);
-    position: absolute;
-    left: -1.2rem;
-}
-</style>
+		.main-title {
+			font-size: 2rem;
+			margin-bottom: 0.5rem;
+			text-align: left;
+		}
+		
+		.subtitle {
+			font-size: 1rem;
+			color: #666;
+			margin-bottom: 2rem;
+		}
+		
+		.faq-section {
+			margin-bottom: 2rem;
+		}
+		
+		.faq-section h2 {
+			font-size: 1.5rem;
+			margin-bottom: 1.5rem;
+			padding: 1rem 1.5rem;
+			background-color: rgba(0, 142, 135, 0.1);  
+			border-left: 4px solid var(--primary-color);
+			border-radius: 4px;
+			display: flex;
+			align-items: center;
+		}
+		
+		
+		.faq-section h2:hover {
+			background-color: rgba(0, 142, 135, 0.15);
+		}
+		
+		.faq-container {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+		
+		.faq-item {
+			background-color: #fff;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+		}
+		
+		.faq-question {
+			padding: 1.25rem;
+			cursor: pointer;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: rgba(0, 142, 135, 0.05);
+			transition: background-color 0.3s ease;
+		}
+		
+		.faq-question:hover {
+			background-color: rgba(0, 142, 135, 0.1);
+		}
+		
+		.faq-question h3 {
+			margin: 0;
+			font-size: 1rem;
+		}
+		
+		.toggle-icon {
+			font-size: 1.25rem;
+			color: var(--primary-color);
+			transition: transform 0.3s ease;
+		}
+		
+		.faq-answer {
+			padding: 0;
+			max-height: 0;
+			overflow: hidden;
+			transition: all 0.3s ease;
+		}
+		
+		.faq-answer.active {
+			padding: 1.25rem;
+			max-height: 500px;
+		}
+		
+		.faq-answer p {
+			margin-top: 0;
+		}
+		
+		.faq-answer ul {
+			list-style: none;
+			padding-left: 1.2rem;
+		}
+		
+		.faq-answer ul li {
+			margin-bottom: 0.5rem;
+			position: relative;
+		}
+		
+		.faq-answer ul li:before {
+			content: "•";
+			color: var(--secondary-color);
+			position: absolute;
+			left: -1.2rem;
+		}
+		</style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -132,7 +132,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<!-- <a href="index.html" class="logo"></a> -->
+						<img src="images/logo.png" alt="" style="height: auto; width: 100px;">
 					</header>
 
 				<!-- Nav -->
@@ -143,7 +143,7 @@
 						<li><a href="indicators.html"  class= "visible">Indicators</a></li>
 						<li><a href="accessdata.html" class= "visible">Access Data</a></li>
 						<li><a href="tools.html" class= "visible">Tools</a></li>
-						<li><a href="events.html" class= "visible">Events</a></li>
+						<li><a href="events.php" class= "visible">Events</a></li>
 						<li><a href="termsofdatause.html" class= "visible">Term of Data Use</a></li>
 						<li><a href="FAQ.html" class= "visible">FAQ</a></li>
 					</ul>
@@ -325,45 +325,49 @@
 						  
 				<script>
 					function toggleAnswer(element) {
-    const answer = element.nextElementSibling;
-    const icon = element.querySelector('.toggle-icon');
-    
-    // Toggle the active class
-    answer.classList.toggle('active');
-    
-    // Update the icon
-    if (answer.classList.contains('active')) {
-        icon.textContent = '-';
-    } else {
-        icon.textContent = '+';
-    }
-}
-				</script>
+					const answer = element.nextElementSibling;
+					const icon = element.querySelector('.toggle-icon');
+					
+					// Toggle the active class
+					answer.classList.toggle('active');
+					
+					// Update the icon
+					if (answer.classList.contains('active')) {
+						icon.textContent = '-';
+					} else {
+						icon.textContent = '+';
+					}
+					}
+				</script>		  
 						  
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
+							<form method="POST" action="Assets/php/form.php" id="form">
+							  <div class="fields">
+								<div class="field">
+								  <label for="name">Name</label>
+								  <input type="text" name="name" id="name" required />
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+								<div class="field">
+								  <label for="email">Email</label>
+								  <input type="email" name="email" id="email" required />
+								</div>
+								<div class="field">
+								  <label for="message">Message</label>
+								  <textarea name="message" id="message" rows="3" required></textarea>
+								</div>
+							  </div>
+							  <!-- Error and success messages -->
+							  <div class="main-error error d-none" id="error-msg">Error occurred</div>
+							  <div class="sent-message d-none" id="sent-msg">Your message has been sent. Thank you!</div>
+							  <ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							  </ul>
 							</form>
-						</section>
+						  </section>
+						  
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>

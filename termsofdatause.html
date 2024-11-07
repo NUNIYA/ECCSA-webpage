@@ -12,78 +12,78 @@
 
 
 
-.main-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: left;
-}
-
-.content-section {
-    margin-bottom: 2.5rem;
-}
-
-.content-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-}
-
-.policy-item {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: rgba(0, 142, 135, 0.05);
-    border-radius: 8px;
-    border-left: 4px solid var(--primary-color);
-}
-
-.policy-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.policy-item ul {
-    list-style: none;
-    padding-left: 1.5rem;
-}
-
-.policy-item ul li {
-    margin-bottom: 0.5rem;
-    position: relative;
-}
-
-.policy-item ul li:before {
-    content: "•";
-    color: var(--secondary-color);
-    position: absolute;
-    left: -1.5rem;
-}
-
-.contact-info {
-    list-style: none;
-    padding-left: 0;
-}
-
-.contact-info li {
-    margin-bottom: 0.5rem;
-}
-
-.agreement-box {
-    margin-top: 3rem;
-    padding: 1.5rem;
-    background-color: rgba(0, 142, 135, 0.1);
-    border-radius: 8px;
-    border: 1px solid var(--primary-color);
-}
-
-.agreement-box p {
-    margin: 0;
-    font-weight: 500;
-    text-align: center;
-}
-.intro{
-	margin-left: auto !important;
-}
-	</style>
+		.main-title {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+			text-align: left;
+		}
+		
+		.content-section {
+			margin-bottom: 2.5rem;
+		}
+		
+		.content-section h2 {
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+		
+		.policy-item {
+			margin-bottom: 2rem;
+			padding: 1.5rem;
+			background-color: rgba(0, 142, 135, 0.05);
+			border-radius: 8px;
+			border-left: 4px solid var(--primary-color);
+		}
+		
+		.policy-item h3 {
+			font-size: 1.2rem;
+			margin-bottom: 1rem;
+		}
+		
+		.policy-item ul {
+			list-style: none;
+			padding-left: 1.5rem;
+		}
+		
+		.policy-item ul li {
+			margin-bottom: 0.5rem;
+			position: relative;
+		}
+		
+		.policy-item ul li:before {
+			content: "•";
+			color: var(--secondary-color);
+			position: absolute;
+			left: -1.5rem;
+		}
+		
+		.contact-info {
+			list-style: none;
+			padding-left: 0;
+		}
+		
+		.contact-info li {
+			margin-bottom: 0.5rem;
+		}
+		
+		.agreement-box {
+			margin-top: 3rem;
+			padding: 1.5rem;
+			background-color: rgba(0, 142, 135, 0.1);
+			border-radius: 8px;
+			border: 1px solid var(--primary-color);
+		}
+		
+		.agreement-box p {
+			margin: 0;
+			font-weight: 500;
+			text-align: center;
+		}
+		.intro{
+			margin-left: auto !important;
+		}
+			</style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -104,7 +104,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<!-- <a href="index.html" class="logo"></a> -->
+						<img src="images/logo.png" alt="" style="height: auto; width: 100px;">
 					</header>
 
 				<!-- Nav -->
@@ -115,7 +115,7 @@
 						<li><a href="indicators.html"  class= "visible">Indicators</a></li>
 						<li><a href="accessdata.html" class= "visible">Access Data</a></li>
 						<li><a href="tools.html" class= "visible">Tools</a></li>
-						<li><a href="events.html" class= "visible">Events</a></li>
+						<li><a href="events.php" class= "visible">Events</a></li>
 						<li><a href="termsofdatause.html" class= "visible">Term of Data Use</a></li>
 						<li><a href="FAQ.html" class= "visible">FAQ</a></li>
 					</ul>
@@ -126,8 +126,9 @@
 						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 				</nav>
+				
 
-                <!-- Main -->
+				<!-- Main -->
 				<div id="main">
 					<h1 class="main-title">TERMS OF DATA USE</h1>
 					
@@ -229,31 +230,36 @@
 					<div class="agreement-box">
 						<p>By accessing and using the data provided by ECSA, you agree to abide by these terms of use. ECSA reserves the right to modify these terms at any time.</p>
 					</div>
-				</div>
+				</div>		  
+						  
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
+							<form method="POST" action="Assets/php/form.php" id="form">
+							  <div class="fields">
+								<div class="field">
+								  <label for="name">Name</label>
+								  <input type="text" name="name" id="name" required />
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+								<div class="field">
+								  <label for="email">Email</label>
+								  <input type="email" name="email" id="email" required />
+								</div>
+								<div class="field">
+								  <label for="message">Message</label>
+								  <textarea name="message" id="message" rows="3" required></textarea>
+								</div>
+							  </div>
+							  <!-- Error and success messages -->
+							  <div class="main-error error d-none" id="error-msg">Error occurred</div>
+							  <div class="sent-message d-none" id="sent-msg">Your message has been sent. Thank you!</div>
+							  <ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							  </ul>
 							</form>
-						</section>
+						  </section>
+						  
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
@@ -299,4 +305,5 @@
 
 	</body>
 </html>
+
 				

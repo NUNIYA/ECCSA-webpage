@@ -4094,6 +4094,9 @@ body.is-preload #wrapper.fade-in:before {
 
 
 /* Footer */
+#footer input {
+	color: black;
+}
 
 	#footer {
 		color: white;
@@ -4111,7 +4114,7 @@ body.is-preload #wrapper.fade-in:before {
 	}
 
 		#footer input, #footer select, #footer textarea {
-			color: #fff;
+			color: black;
 		}
 
 		#footer a {
@@ -4836,10 +4839,10 @@ body.is-preload #wrapper.fade-in:before {
 	}
 
 	/*event box*/
+
 .event-box {
 	max-width: 400px;
 	padding: 20px;
-	margin: 20px auto;
 	border: 1px solid #ddd;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -4863,4 +4866,59 @@ body.is-preload #wrapper.fade-in:before {
 .event-box a:hover {
 	background-color: var(--primary-color);
 }
+		.join-text {
+			
+			padding: 0 2rem;
+			font-size: 1.5rem;
+			color: var(--primary-color);
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+
+
+		.event-box p:last-child {
+			margin-top: 2rem;
+			text-align: center;
+		}
+
+		.event-box a {
+			display: inline-block;
+			background-color: var(--primary-color);
+			color: #ffffff;
+			padding: 1rem 2.5rem;
+			border-radius: 50px;
+			text-decoration: none;
+			border: none;
+			transition: all 0.3s ease;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+			font-size: 1.1rem;
+		}
+
+		.event-box a:hover {
+			background-color: var(--primary-color);
+			transform: translateY(-2px);
+			box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+			color: var(--secondary-color);
+		}
+
+		.event-box a:active {
+			transform: translateY(0);
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		#main>p:last-of-type {
+			text-align: center;
+			font-size: 1.4rem;
+			max-width: 900px;
+			margin: 2.5rem auto 0;
+			padding: 2.5rem;
+			background-color: #f8f9fa;
+			border-radius: 12px;
+		}
+	
 	
